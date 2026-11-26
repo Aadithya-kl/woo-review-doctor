@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "woo-review-doctor"
+version = "1.0.0"
+description = "Audit a WooCommerce product reviews CSV export for unanswered negative reviews, fake-review patterns, and rating problems"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+
+[project.scripts]
+woo-review-doctor = "woo_review_doctor:main_entry"
+
+[tool.setuptools]
+py-modules = ["woo_review_doctor"]
